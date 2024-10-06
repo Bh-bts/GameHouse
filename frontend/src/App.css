@@ -1,0 +1,45 @@
+.App {
+  text-align: center;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(5, 60px); /* Fixed size for each column */
+  gap: 10px;
+  justify-content: center;
+  margin: 20px auto; /* Center the grid container */
+  width: 320px; /* Set fixed width for the grid (5 * 60px + gaps) */
+  height: 320px; /* Set fixed height for the grid (5 * 60px + gaps) */
+  margin-bottom: 50px;
+}
+
+.grid-item {
+  background-color: #4CAF50; /* Normal button color */
+  border: none;
+  color: white;
+  font-size: 20px;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+  width: 60px; /* Ensure consistent width */
+  height: 60px; /* Ensure consistent height */
+}
+
+.grid-item.empty {
+  background-color: white; /* Make empty cells white */
+  border: 2px dashed #ccc; /* Optional: add a border to differentiate */
+}
+
+.grid-item:disabled {
+  background-color: #d3d3d3;
+  cursor: not-allowed;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+button:disabled {
+  background-color: #d3d3d3;
+}
